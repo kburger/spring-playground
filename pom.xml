@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
   
     <groupId>com.github.kburger</groupId>
-    <artifactId>spring-jpa-repo-playground</artifactId>
+    <artifactId>spring-playground</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>war</packaging>
   
