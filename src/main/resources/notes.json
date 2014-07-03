@@ -1,0 +1,30 @@
+[
+    {"_class":"com.github.kburger.playground.domain.Note",
+        "id":"8d75fd90-c75b-4ba1-ae02-55f292c110da",
+        "title":"note number 1",
+        "content":"",
+        "tags":["foo"],
+        "item":"2613dde8-ca87-4990-a55f-d17954eb973e"
+    },
+    {"_class":"com.github.kburger.playground.domain.Note",
+        "id":"5010f4d9-92eb-4e20-87c8-80543b3eef75",
+        "title":"note #2",
+        "content":"",
+        "tags":["foo","bar"],
+        "item":"b61a5518-1b25-416f-8547-71ae5c33301a"
+    },
+    {"_class":"com.github.kburger.playground.domain.Note",
+        "id":"ff74a672-d95c-4d48-9a49-2cb638c95a77",
+        "title":"note three",
+        "content":"",
+        "tags":["bar"],
+        "item":"9e961ea0-412f-43e6-b860-b6d4bd656a20"
+    },
+    {"_class":"com.github.kburger.playground.domain.Note",
+        "id":"ff74a672-d95c-4d48-9a49-2cb638c95a87",
+        "title":"note three point one",
+        "content":"This is an additional note for item 3",
+        "tags":["foo"],
+        "item":"9e961ea0-412f-43e6-b860-b6d4bd656a20"
+    }
+]

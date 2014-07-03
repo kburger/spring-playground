@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:sec="http://www.springframework.org/schema/security" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+    
+    <sec:http entry-point-ref="entryPoint"
+            use-expressions="true"
+            auto-config="false"
+            create-session="stateless"
+            authentication-manager-ref="authManager">
+        <sec:custom-filter ref="customFilter" position="FORM_LOGIN_FILTER"/>
+    </sec:http>
+    
+    <bean id="authManager" class="com.github.kburger.playground.security.CustomAuthenticationManager"/>
+    
+    <bean id="entryPoint" class="com.github.kburger.playground.security.CustomAuthenticationEntryPoint"/>
+    
+    <bean id="customFilter" class="com.github.kburger.playground.security.CustomTokenAuthenticationFilter">
+        <constructor-arg value="/**"/>
+        <property name="authenticationManager" ref="authManager"/>
+        <property name="authenticationSuccessHandler">
+            <bean class="com.github.kburger.playground.security.CustomAuthenticationSuccesHandler"/>
+        </property>
+        <property name="whitelist">
+            <list>
+                <value>/auth/token</value>
+            </list>
+        </property>
+    </bean>
+</beans>

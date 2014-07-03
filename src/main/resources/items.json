@@ -1,0 +1,5 @@
+[
+{"_class":"com.github.kburger.playground.domain.Item","id":"2613dde8-ca87-4990-a55f-d17954eb973e","name":"item number 1"},
+{"_class":"com.github.kburger.playground.domain.Item","id":"b61a5518-1b25-416f-8547-71ae5c33301a","name":"item #2"},
+{"_class":"com.github.kburger.playground.domain.Item","id":"9e961ea0-412f-43e6-b860-b6d4bd656a20","name":"item three"}
+]
